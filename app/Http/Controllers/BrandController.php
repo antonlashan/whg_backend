@@ -6,7 +6,6 @@ use App\Models\Brand;
 use App\Models\BrandGame;
 use App\Models\Category;
 use App\Models\Country;
-use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Query\JoinClause;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -110,9 +109,5 @@ class BrandController extends Controller
                     ]
                 ];
             });
-
-        return collect($brandGames)->map(function ($array, $key) use ($noOfGamesPerCategory) {
-            return collect($array)->take($noOfGamesPerCategory);
-        });
     }
 }

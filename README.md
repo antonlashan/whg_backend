@@ -16,7 +16,7 @@ https://laravel.com/docs/7.x#installing-laravel (./composer.phar install)
 php artisian serve
 ```
 
-#### Api dov
+#### Api doc
 ```
 http://127.0.0.1:8000/request-docs
 ```
